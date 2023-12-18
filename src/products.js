@@ -16,7 +16,7 @@ const ProductAccordion = ({ products }) => {
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
             <p>{product.description}</p>
-            <div><img src={product.imageUrl} alt={product.title} /></div>
+            <div><img src={process.env.PUBLIC_URL + product.imageUrl} alt={product.title} /></div>
             <h6 className='d-flex justify-content-end mt-1' ><i className="bi bi-prescription2"></i> {product.presentaciones}</h6>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Products = () => {
   // Sample data for 14 products
   const productsData = [
     { title: 'Células Madre', presentaciones: "1000uds 2000uds 3000uds", description: '1 Las células madre mesenquimales son capaces de auto renovarse. Tienen propiedades inmunomodulatorias, debido a que secretan citoquinas y receptores que son capaces de modificar el microambiente inmune del huésped.', imageUrl: '/images/product1.jpg' },
-    { title: 'Implantes', presentaciones: "1000uds 2000uds 3000uds", description: '2 El implante liofilizado de placenta apoya a la homeostasis del organismo, es decir, a mantener el equilibrio natural del cuerpo. Como resultado, el proceso de envejecimiento se hace más lento y se mejora la producción de colágeno y elastina.', imageUrl: '/images/productsImages/product2.jpg' },
+    { title: 'Implantes', presentaciones: "1000uds 2000uds 3000uds", description: '2 El implante liofilizado de placenta apoya a la homeostasis del organismo, es decir, a mantener el equilibrio natural del cuerpo. Como resultado, el proceso de envejecimiento se hace más lento y se mejora la producción de colágeno y elastina.', imageUrl: '/images/product2.jpg' },
     { title: 'Fibroblastos', presentaciones: "1000uds 2000uds 3000uds", description: '3 Los fibroblastos son las principales células productoras de colágeno y elastina en nuestro cuerpo. Son esenciales en el rejuvenecimiento de la piel.', imageUrl: '/images/productsImages/product3.jpg' },
     { title: 'Exosomas', presentaciones: "1000uds 2000uds 3000uds", description: '4 los Exosomas son pequeñas vesículas, que provienen de las células, con un alto contenido en proteínas, lípidos, ARN mensajero, ARN mitocondrial, ADN y distintos factores de crecimiento.', imageUrl: '/images/product4.jpg' },
     { title: 'Factor de Transferencia', presentaciones: "1000uds 2000uds 3000uds", description: '5 El Factor de Transferencia es un producto que consta de moléculas mensajeras que llevan información al sistema inmunológico de un individuo (Inmunomodulador) para incrementar sus defensas y su función.', imageUrl: '/images/product5.jpg' },

@@ -16,7 +16,7 @@ const ServiceAccordion = ({ services }) => {
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
             <p>{service.description}</p>
-            <div><img src={service.imageUrl} alt={service.title} /></div>
+            <div><img src={process.env.PUBLIC_URL + service.imageUrl} alt={service.title} /></div>
             <h6 className='d-flex justify-content-end mt-1' ><i className="bi bi-prescription2"></i> {service.presentaciones}</h6>
           </div>
         </div>

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300;400&display=swap');
 
+
 body{
-  background-image: url('/images/background.jpg');  /* Adjust the path accordingly */
+  background-image: url('../public/images/background.jpg'); /* relative path*/
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -10,7 +11,7 @@ body{
 }
 
 .head-container {
-  background-image: url('/images/logo.jpg');  /* Adjust the path accordingly */
+  background-image: url('../public/images/logo.jpg');  /* Adjust the path accordingly */
   background-size: cover;
   background-repeat: repeat;
   background-position: 0px 0px;  /* Adjust the position */

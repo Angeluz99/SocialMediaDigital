@@ -40,7 +40,7 @@ const App = () => {
     <div>
     <div className="head-container">
       <nav className="navbar p-1 ">
-        <div onClick={() => navigateTo('home')}>  <img id='smlogo' src='/images/smlogo.png' alt="Logo" /></div>
+      <div onClick={() => navigateTo('home')}><img id='smlogo' src={process.env.PUBLIC_URL + '/images/smlogo.png'} alt="Logo" /></div>
         <button onClick={() => navigateTo('products')}><i className="bi bi-cookie"></i> Tratamientos</button>
         <button onClick={() => navigateTo('services')}><i className="bi bi-clipboard2-heart"></i> Capacítate</button>
         <button onClick={() => navigateTo('contact')}><i className="bi bi-send-arrow-up"></i> Contacto</button>
@@ -73,3 +73,4 @@ const App = () => {
 };
 
 export default App;
+
