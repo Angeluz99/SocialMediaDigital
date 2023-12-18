@@ -27,7 +27,7 @@ const ServiceAccordion = ({ services }) => {
 
 const Services = () => {
   const servicesData = [
-    { title: 'Sueroterapia', presentaciones: "14 DE NOVIEMBRE. 20:00 hrs", description: 'Ponente: Andrés Castañeda Luna. Conoce la fórmula más innovadora que cambiará la vida tus pacientes ', imageUrl: '/images/servicesImages/service1.jpg' },
+    { title: 'Sueroterapia', presentaciones: "14 DE NOVIEMBRE. 20:00 hrs", description: 'Ponente: Andrés Castañeda Luna. Conoce la fórmula más innovadora que cambiará la vida tus pacientes ', imageUrl: '/images/service1.jpg' },
   ];
 return (
   <section className='service-container'>
