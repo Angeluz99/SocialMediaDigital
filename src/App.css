@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300;400&display=swap');
+
+body{
+  background-image: url('/public/images/background.jpg');  /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  color: #dcbee7;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head-container {
+  background-image: url('/public/images/logo.jpg');  /* Adjust the path accordingly */
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 0px 0px;  /* Adjust the position */
+
+  height: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: .8rem;
+  background-color: rgba(240, 248, 255, 0.138);
+  /* margin-bottom: .1rem; */
+
+
+}
+
+.navbar button{
+  background-color: #3c2044;
+  color: #dcbee7;
+  /* margin: .1rem; */
+  border: none;
+  border-radius: 25px;
+  font-family: Nunito;
+
+
+
+}
+
+#smlogo{
+  width: 2rem;
+}
+
+.head-container p {
+font-size: .8rem;
+width: 11rem;
+color: #dcbee7;
+font-family: Nunito;
+background-color: rgba(240, 248, 255, 0.138);
+}  
+
+
+
+
+.products-container, .service-container, .contact-container{
+  background-color: #6c376bce;
+  padding: .5rem;
+  font-family: Nunito;
+
+}
+
+
+
+/* .accordion-content{
+  transition: all 1s ease-in;
+
+} */
+#product-container, #service-container{
+  background: linear-gradient(319deg, rgba(100,60,132,0.35) 0%, rgba(60,32,68,.9) 30%), rgb(116,21,76, .5)80%;
+  min-height: fit-content;
+  padding: .5rem;
+  margin: .2rem 0rem;
+  border-radius: 5%;
+  animation: cascadeDown 0.5s ease-in;
+
+}
+.accordion-content div{
+  height: 8rem ;
+  width:20rem ;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.accordion-content div img{
+  border-radius: 15%;
 }
 
-@keyframes App-logo-spin {
+/* ProductAccordion.css */
+@keyframes cascadeDown {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    max-height: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    max-height: 1000px; /* Set a reasonable max-height based on your content */
   }
+}
+
+.accordion-content {
+  animation: cascadeDown 0.5s ease-in;
+  overflow: hidden;
+  max-height: 0; /* Set initial max-height to 0 */
+  transition: max-height 0.5s ease-in; /* Add transition for smooth height changes */
+}
+
+.cascade-item.active {
+  max-height: 1000px; /* Set max-height to 1000px when active */
+}
+
+
+.social-head{
+  background-color: rgba(240, 248, 255, 0.138);
+  margin-top: -1rem;
+  font-size: 1rem;
+  
+
+
+}
+
+.social-head a{
+  margin: 0 1.8rem;
+}
+
+a{
+  text-decoration: none;
+  color: #ecddf1;
+
+
 }
