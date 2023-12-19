@@ -14,17 +14,24 @@ body{
   background-image: url('../public/images/logo.jpg');  /* Adjust the path accordingly */
   background-size: cover;
   background-repeat: repeat;
-  background-position: 0px 0px;  /* Adjust the position */
+  background-position: 5rem -1.5rem;
 
-  height: 15rem;
 }
-
+.head-container p {
+  font-size: .8rem;
+  width: 12rem;
+  color: #dcbee7;
+  font-family: Nunito;
+  background-color: rgba(240, 248, 255, 0.138);
+  margin-top: 2.3rem;
+  }  
+  
 .navbar{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   font-size: .8rem;
-  background-color: rgba(240, 248, 255, 0.138);
+  background-color: #6c376be8;
   /* margin-bottom: .1rem; */
 
 
@@ -37,6 +44,8 @@ body{
   border: none;
   border-radius: 25px;
   font-family: Nunito;
+  filter: drop-shadow(5px 5px 6px #120115);
+
 
 
 
@@ -44,15 +53,9 @@ body{
 
 #smlogo{
   width: 2rem;
+  filter: drop-shadow(5px 5px 6px #120115);
 }
 
-.head-container p {
-font-size: .8rem;
-width: 11rem;
-color: #dcbee7;
-font-family: Nunito;
-background-color: rgba(240, 248, 255, 0.138);
-}  
 
 
 
@@ -126,7 +129,7 @@ background-color: rgba(240, 248, 255, 0.138);
 }
 
 .social-head a{
-  margin: 0 1.8rem;
+  margin: 0 1.5rem;
 }
 
 a{

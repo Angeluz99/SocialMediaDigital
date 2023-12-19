@@ -15,9 +15,12 @@ const ServiceAccordion = ({ services }) => {
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
-            <p>{service.description}</p>
+            <p><i className="bi bi-search-heart"></i> {service.description}</p>
+            <p>Impartido por <strong>{service.ponente}</strong></p>
             <div><img src={process.env.PUBLIC_URL + service.imageUrl} alt={service.title} /></div>
-            <h6 className='d-flex justify-content-end mt-1' ><i className="bi bi-prescription2"></i> {service.presentaciones}</h6>
+            <p className='d-flex justify-content-end mt-1' > <strong> <i className="bi bi-calendar-heart"></i> {service.presentaciones}</strong></p>
+            <p className='d-flex justify-content-end mt-1' > {service.lugar}</p>
+
           </div>
         </div>
       ))}
@@ -27,7 +30,7 @@ const ServiceAccordion = ({ services }) => {
 
 const Services = () => {
   const servicesData = [
-    { title: 'Sueroterapia', presentaciones: "14 DE NOVIEMBRE. 20:00 hrs", description: 'Ponente: Andrés Castañeda Luna. Conoce la fórmula más innovadora que cambiará la vida tus pacientes ', imageUrl: '/images/service1.jpg' },
+    { title: 'Sueroterapia', presentaciones: "14 de noviembre. 20:00 hrs", lugar:"Via Zoom", description: 'Conoce la fórmula más innovadora que cambiará la vida tus pacientes', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service1.jpg' },
   ];
 return (
   <section className='service-container'>
@@ -35,7 +38,7 @@ return (
     <p>
     ¿Eres profesional de la salud? ¿Te interesa ofrecer alternativas a tus pacientes?
     ¿Quieres mejorar calidad de vida con tratamientos efectivos y confiables?
-    ¡Entonces este curso es para ti!.
+    ¡Entonces este curso es para ti!
     </p>
 
     <ServiceAccordion services={servicesData} />

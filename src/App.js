@@ -39,14 +39,14 @@ const App = () => {
   return (
     <div>
     <div className="head-container">
-      <nav className="navbar p-1 ">
+      <nav className="navbar p-1 fixed-top ">
       <div onClick={() => navigateTo('home')}><img id='smlogo' src={process.env.PUBLIC_URL + '/images/smlogo.png'} alt="Logo" /></div>
         <button onClick={() => navigateTo('products')}><i className="bi bi-cookie"></i> Tratamientos</button>
         <button onClick={() => navigateTo('services')}><i className="bi bi-clipboard2-heart"></i> Capacítate</button>
         <button onClick={() => navigateTo('contact')}><i className="bi bi-send-arrow-up"></i> Contacto</button>
       </nav>
       <p className='p-1'>
-      Somos un equipo de distribuidores especializados en medicina y terapia celular. Contamos con médicos certificados en el area regenerativa para apoyar en tus tratamientos. ¡Contáctanos para asesorías y pedidos!
+      Somos un equipo de <strong>distribuidores especializados en medicina y terapia celular</strong>. Contamos con médicos certificados en el <strong>area regenerativa para apoyar en tus tratamientos.</strong>
       </p>
       <div className='social-head d-flex justify-content-end'>
         {/* <div className='social-head-child d-flex justify-content-around border border-success' > */}
