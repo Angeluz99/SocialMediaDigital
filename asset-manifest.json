@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/celulasregenerate/static/css/main.f686f70d.css",
-    "main.js": "/celulasregenerate/static/js/main.75a3b117.js",
+    "main.css": "/celulasregenerate/static/css/main.0dce7a45.css",
+    "main.js": "/celulasregenerate/static/js/main.869ba57c.js",
     "static/js/787.72d37a86.chunk.js": "/celulasregenerate/static/js/787.72d37a86.chunk.js",
     "static/media/background.jpg": "/celulasregenerate/static/media/background.b41b2451ab4ef377ed88.jpg",
-    "static/media/logo.jpg": "/celulasregenerate/static/media/logo.1882a183452694f2e337.jpg",
+    "static/media/logo.jpg": "/celulasregenerate/static/media/logo.fdbb39ca5e970888b048.jpg",
     "index.html": "/celulasregenerate/index.html",
-    "main.f686f70d.css.map": "/celulasregenerate/static/css/main.f686f70d.css.map",
-    "main.75a3b117.js.map": "/celulasregenerate/static/js/main.75a3b117.js.map",
+    "main.0dce7a45.css.map": "/celulasregenerate/static/css/main.0dce7a45.css.map",
+    "main.869ba57c.js.map": "/celulasregenerate/static/js/main.869ba57c.js.map",
     "787.72d37a86.chunk.js.map": "/celulasregenerate/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f686f70d.css",
-    "static/js/main.75a3b117.js"
+    "static/css/main.0dce7a45.css",
+    "static/js/main.869ba57c.js"
   ]
 }
