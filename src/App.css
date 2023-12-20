@@ -11,9 +11,11 @@ body{
 }
 
 .head-container {
+  background-color: #120115;
+
   background-image: url('../public/images/logo.jpg');  /* Adjust the path accordingly */
   background-size: cover;
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
   background-position: 5rem -1.5rem;
 
 }
@@ -23,14 +25,13 @@ body{
   color: #dcbee7;
   font-family: Nunito;
   background-color: rgba(240, 248, 255, 0.138);
-  margin-top: 2.3rem;
+  margin-top: 2.2rem;
   }  
   
 .navbar{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  font-size: .8rem;
+  justify-content: space-around;
   background-color: #6c376be8;
   /* margin-bottom: .1rem; */
 
@@ -41,6 +42,8 @@ body{
   background-color: #3c2044;
   color: #dcbee7;
   /* margin: .1rem; */
+  font-size: .8rem;
+
   border: none;
   border-radius: 25px;
   font-family: Nunito;
@@ -67,7 +70,9 @@ body{
 
 }
 
-
+#head-image, #head-image2{
+  display: none;
+}
 
 /* .accordion-content{
   transition: all 1s ease-in;
@@ -95,7 +100,6 @@ body{
   border-radius: 15%;
 }
 
-/* ProductAccordion.css */
 @keyframes cascadeDown {
   from {
     opacity: 0;
@@ -135,6 +139,159 @@ body{
 a{
   text-decoration: none;
   color: #ecddf1;
+
+
+}
+
+/* for big cellphones */
+@media only screen and (min-width: 400px) {
+  .head-container {
+
+    background-position: 5rem -2.5rem;
+  
+  }
+
+}
+
+/* for small ipads */
+
+@media only screen and (min-width: 700px) {
+  .head-container {
+    background-image: url('../public/images/logotablet.jpg');  /* Adjust the path accordingly */
+    background-position: 14rem -4rem;
+    background-size:43rem;
+  
+  }
+
+  .head-container p {
+    font-size: 1.5rem;
+    width: 24rem;
+
+    margin-top: 3rem; 
+    }  
+
+    .navbar button, .social-head{
+      font-size: larger;
+    }
+
+    #smlogo{
+      width: 3rem;
+    }
+
+    .products-container p, .service-container p{
+      font-size: 1.7rem;
+    }
+
+    .products-container h2, .contact-container h3, .service-container h2{
+      font-size: 2.5rem;
+
+
+    }
+
+     .product-container p{
+      font-size: 2rem;
+
+    } 
+    #product-title, #service-title{
+      font-size: 2rem;
+
+    }
+    .social-head a{
+      font-size: larger;
+
+      margin: 0 3.5rem;
+    }
+
+    #contact-info h6{
+      font-size: 1.7rem;
+    }
+
+    .accordion-content div{
+      width: 100%;
+    }
+
+    .accordion-content div img{
+       transform: scale(1.5);
+    }
+
+    
+ }
+
+
+ /* for big ipads */
+
+@media only screen and (min-width: 990px) {
+
+  #head-image2{
+    display: block; 
+    margin-bottom: 1rem;
+    z-index: 100;
+    /* filter: blur(2px) */
+  } 
+
+
+  #head-content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .head-container {
+
+    background-position: 11rem -1rem;
+    background-size:43rem;
+  
+  }
+}
+
+
+ /* for computers */
+@media only screen and (min-width: 1200px) {
+
+  #head-image{
+    display: block; 
+    opacity:.8 ;  
+    margin-bottom: 1rem;
+    /* filter: blur(2px) */
+  } 
+
+
+  #head-image{
+margin-right: -22rem;
+  } 
+
+  .head-container p {
+    background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
+  } 
+
+  .social-head{
+    background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
+
+  }
+
+
+  .products-container p, .service-container p{
+    font-size: 1.2rem;
+  }
+
+  .products-container h2, .contact-container h3, .service-container h2{
+    font-size: 2.2rem;
+
+
+  }
+
+
+  #product-title, #service-title{
+    font-size: 1.5rem;
+
+  }
+  .accordion-content div img{
+    transform: scale(2);
+ }
+
+
+.accordion-content div{
+  height: 15rem;
+}
 
 
 }

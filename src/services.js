@@ -10,14 +10,14 @@ const ServiceAccordion = ({ services }) => {
     <div>
       {services.map((service, index) => (
         <div key={index} id='service-container' className={`accordion-item ${index === activeIndex ? 'active' : ''}`}>
-          <h5 className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
+          <h5 id='service-title' className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
             {service.title}
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
             <p><i className="bi bi-search-heart"></i> {service.description}</p>
             <p>Impartido por <strong>{service.ponente}</strong></p>
-            <div><img src={process.env.PUBLIC_URL + service.imageUrl} alt={service.title} /></div>
+            <div><img src={process.env.PUBLIC_URL + service.imageUrl} alt={service.title}  loading="lazy"/></div>
             <p className='d-flex justify-content-end mt-1' > <strong> <i className="bi bi-calendar-heart"></i> {service.presentaciones}</strong></p>
             <p className='d-flex justify-content-end mt-1' > {service.lugar}</p>
 

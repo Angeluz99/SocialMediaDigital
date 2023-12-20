@@ -10,13 +10,13 @@ const ProductAccordion = ({ products }) => {
     <div>
       {products.map((product, index) => (
         <div key={index} id='product-container' className={`accordion-item ${index === activeIndex ? 'active' : ''}`}>
-          <h5 className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
+          <h5 id='product-title' className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
             {product.title}
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
-            <p><i className="bi bi-body-text"></i> {product.description}</p>
-            <div><img src={process.env.PUBLIC_URL + product.imageUrl} alt={product.title} /></div>
+            <p> <strong> <i className="bi bi-body-text"></i></strong> {product.description}</p>
+            <div><img src={process.env.PUBLIC_URL + product.imageUrl} alt={product.title}  loading="lazy"/></div>
             <p className='d-flex justify-content-end mt-1' > <strong> <i className="bi bi-prescription2"></i> {product.presentaciones}</strong></p>
           </div>
         </div>
