@@ -6,7 +6,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  color: #dcbee7;
+  /* color: #dcbee7; */
   
 }
 
@@ -26,6 +26,7 @@ body{
   font-family: Nunito;
   background-color: rgba(240, 248, 255, 0.138);
   margin-top: 2.2rem;
+  padding: 0rem .5rem;
   }  
   
 .navbar{
@@ -40,14 +41,14 @@ body{
 
 .navbar button{
   background-color: #3c2044;
-  color: #dcbee7;
+  color: antiquewhite;
   /* margin: .1rem; */
   font-size: .8rem;
 
   border: none;
   border-radius: 25px;
   font-family: Nunito;
-  filter: drop-shadow(5px 5px 6px #120115);
+  filter: drop-shadow(3px 3px 5px #120115);
 
 
 
@@ -56,7 +57,7 @@ body{
 
 #smlogo{
   width: 2rem;
-  filter: drop-shadow(5px 5px 6px #120115);
+  filter: drop-shadow(3px 3px 5px #120115);
 }
 
 
@@ -67,6 +68,8 @@ body{
   background-color: #6c376bce;
   padding: .5rem;
   font-family: Nunito;
+  color: antiquewhite;
+
 
 }
 
@@ -74,25 +77,33 @@ body{
   display: none;
 }
 
-/* .accordion-content{
-  transition: all 1s ease-in;
-
-} */
+.accordion-content{
+color: antiquewhite;
+} 
 #product-container, #service-container{
   background: linear-gradient(319deg, rgba(100,60,132,0.35) 0%, rgba(60,32,68,.9) 30%), rgb(116,21,76, .5)80%;
   min-height: fit-content;
   padding: .5rem;
   margin: .2rem 0rem;
-  border-radius: 5%;
+  border-radius: 5px;
   animation: cascadeDown 0.5s ease-in;
+  color: #dcbee7;
 
 }
+#product-title, #service-title{
+  filter: drop-shadow(5px 5px 7px #080009);
+
+}
+
+
 .accordion-content div{
   height: 8rem ;
   width:20rem ;
   overflow: hidden;
   display: flex;
   justify-content: center;
+
+  
 
 }
 
@@ -134,6 +145,7 @@ body{
 
 .social-head a{
   margin: 0 1.5rem;
+  transition: all .5s ease-out;
 }
 
 a{
@@ -241,6 +253,34 @@ a{
     background-size:43rem;
   
   }
+
+  .navbar button, #smlogo, #product-title, #service-title {
+    transition: all .5s ease-out;
+    cursor: pointer;
+  }
+
+  .navbar button:hover , #smlogo:hover, #contact-info a:hover{
+    transform: scale(1.1);
+    filter: saturate(1.5);
+    filter: drop-shadow(5px 5px 7px #120115);
+
+
+  }
+
+  .social-head a:hover{
+    transform: scale(1.2);
+    color: #390842;
+    filter: drop-shadow(5px 5px 7px #e7baef);
+
+
+  }
+
+  #product-title:hover, #service-title:hover, #product-container:hover,  #service-container:hover{
+    transform: scale(1.02);
+    filter: saturate(2);
+    filter: drop-shadow(5px 5px 7px #7f5f85);
+
+  }
 }
 
 
@@ -249,7 +289,7 @@ a{
 
   #head-image{
     display: block; 
-    opacity:.8 ;  
+    opacity:.9 ;  
     margin-bottom: 1rem;
     /* filter: blur(2px) */
   } 
@@ -261,6 +301,7 @@ margin-right: -22rem;
 
   .head-container p {
     background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
+    padding: 0rem 2rem;
   } 
 
   .social-head{
@@ -268,20 +309,31 @@ margin-right: -22rem;
 
   }
 
-
-  .products-container p, .service-container p{
-    font-size: 1.2rem;
+  #product-container, #service-container{
+    margin: .2rem 2rem;
   }
+
+
 
   .products-container h2, .contact-container h3, .service-container h2{
     font-size: 2.2rem;
+    padding: 0rem 3rem;
 
+  }
+  .products-container p, .service-container p{
+    font-size: 1.2rem;
+    padding: 0rem 4rem;
 
   }
 
-
   #product-title, #service-title{
     font-size: 1.5rem;
+    padding: 0rem 2rem;
+
+  }
+
+  .accordion-content{
+    padding: 0rem 2rem;
 
   }
   .accordion-content div img{

@@ -46,7 +46,7 @@ const App = () => {
         <button onClick={() => navigateTo('contact')}><i className="bi bi-send-arrow-up"></i> Contacto</button>
       </nav>
       <div id='head-content'>
-        <p className='p-1'>
+        <p >
         Somos un equipo de <strong>distribuidores especializados en medicina y terapia celular</strong>. Contamos con médicos certificados en el <strong>area regenerativa para apoyar en tus tratamientos.</strong>
         </p>
         <img id='head-image' src={process.env.PUBLIC_URL + '/images/headimage.png'} alt='pharmaceutical'  loading="lazy"/>
