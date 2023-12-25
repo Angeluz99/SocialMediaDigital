@@ -6,17 +6,16 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  /* color: #dcbee7; */
   
 }
 
+
 .head-container {
   background-color: #120115;
-
   background-image: url('../public/images/logo.jpg');  /* Adjust the path accordingly */
   background-size: cover;
   /* background-repeat: repeat; */
-  background-position: 5rem -1.5rem;
+  background-position: 5rem -2rem;
 
 }
 .head-container p {
@@ -28,74 +27,80 @@ body{
   margin-top: 2.2rem;
   padding: 0rem .5rem;
   }  
-  
 .navbar{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   background-color: #6c376be8;
-  /* margin-bottom: .1rem; */
-
-
 }
-
 .navbar button{
   background-color: #3c2044;
   color: antiquewhite;
   /* margin: .1rem; */
   font-size: .8rem;
-
   border: none;
   border-radius: 25px;
   font-family: Nunito;
   filter: drop-shadow(3px 3px 5px #120115);
 
-
-
-
 }
-
 #smlogo{
   width: 2rem;
   filter: drop-shadow(3px 3px 5px #120115);
 }
 
+#head-image, #head-image2{
+  display: none;
+}
+.social-head{
+  background-color: rgba(240, 248, 255, 0.138);
+  margin-top: -1rem;
+  font-size: 1rem;
+}
 
+.social-head a{
+  margin: 0 1.5rem;
+  transition: all .3s ease-out;
+}
 
+a{
+  text-decoration: none;
+  color: #ecddf1;
 
+}
 
-.products-container, .service-container, .contact-container{
+.allProducts-container, .allServices-container, .contact-container{
   background-color: #6c376bce;
   padding: .5rem;
   font-family: Nunito;
   color: antiquewhite;
+}
+
+.allServices-container{
+  padding: 1rem 0rem;
 
 
 }
-
-#head-image, #head-image2{
-  display: none;
-}
-
-.accordion-content{
-color: antiquewhite;
-} 
-#product-container, #service-container{
-  background: linear-gradient(319deg, rgba(100,60,132,0.35) 0%, rgba(60,32,68,.9) 30%), rgb(116,21,76, .5)80%;
-  min-height: fit-content;
+.accordion{
+  background: linear-gradient(319deg, rgba(100,60,132,0.35) 0%, rgba(60,32,68,.5) 30%), rgb(116,21,76, .3)80%;
   padding: .5rem;
   margin: .2rem 0rem;
   border-radius: 5px;
   animation: cascadeDown 0.5s ease-in;
   color: #dcbee7;
+  width: auto; /* Remove width property */
+
 
 }
-#product-title, #service-title{
+
+.accordion h5{
   filter: drop-shadow(5px 5px 7px #080009);
 
 }
 
-
+.accordion-content{
+  color: antiquewhite;
+} 
 .accordion-content div{
   height: 8rem ;
   width:20rem ;
@@ -103,10 +108,7 @@ color: antiquewhite;
   display: flex;
   justify-content: center;
 
-  
-
 }
-
 .accordion-content div img{
   border-radius: 15%;
 }
@@ -121,39 +123,18 @@ color: antiquewhite;
     max-height: 1000px; /* Set a reasonable max-height based on your content */
   }
 }
-
 .accordion-content {
   animation: cascadeDown 0.5s ease-in;
   overflow: hidden;
   max-height: 0; /* Set initial max-height to 0 */
   transition: max-height 0.5s ease-in; /* Add transition for smooth height changes */
 }
-
 .cascade-item.active {
   max-height: 1000px; /* Set max-height to 1000px when active */
 }
 
 
-.social-head{
-  background-color: rgba(240, 248, 255, 0.138);
-  margin-top: -1rem;
-  font-size: 1rem;
-  
 
-
-}
-
-.social-head a{
-  margin: 0 1.5rem;
-  transition: all .5s ease-out;
-}
-
-a{
-  text-decoration: none;
-  color: #ecddf1;
-
-
-}
 
 /* for big cellphones */
 @media only screen and (min-width: 400px) {
@@ -190,21 +171,21 @@ a{
       width: 3rem;
     }
 
-    .products-container p, .service-container p{
+    .allProducts-container p, .allServices-container p{
       font-size: 1.7rem;
     }
 
-    .products-container h2, .contact-container h3, .service-container h2{
+    .allProducts-container h2, .contact-container h3, .allServices-container h2{
       font-size: 2.5rem;
 
 
     }
 
-     .product-container p{
+     .accordion p{
       font-size: 2rem;
 
     } 
-    #product-title, #service-title{
+    .accordion h5{
       font-size: 2rem;
 
     }
@@ -254,17 +235,19 @@ a{
   
   }
 
-  .navbar button, #smlogo, #product-title, #service-title {
-    transition: all .5s ease-out;
+  .navbar button, #smlogo, .accordion h5 {
+    transition: all .3s ease-out;
     cursor: pointer;
   }
 
+  /*hover animations*/
   .navbar button:hover , #smlogo:hover, #contact-info a:hover{
     transform: scale(1.1);
     filter: saturate(1.5);
     filter: drop-shadow(5px 5px 7px #120115);
-
-
+  }
+  #smlogo:hover{
+    transform: rotate(118deg);
   }
 
   .social-head a:hover{
@@ -275,12 +258,17 @@ a{
 
   }
 
-  #product-title:hover, #service-title:hover, #product-container:hover,  #service-container:hover{
+  .accordion h5:hover, .accordion:hover,  #allServices-container:hover{
     transform: scale(1.02);
     filter: saturate(2);
     filter: drop-shadow(5px 5px 7px #7f5f85);
 
   }
+  .accordion:hover{
+    border: 1px solid whitesmoke;
+    color: white;
+  }
+
 }
 
 
@@ -291,13 +279,16 @@ a{
     display: block; 
     opacity:.9 ;  
     margin-bottom: 1rem;
+    margin-right: -22rem;
+
     /* filter: blur(2px) */
   } 
 
+  .head-container{
+    background-position: 11rem 0rem;
 
-  #head-image{
-margin-right: -22rem;
-  } 
+  }
+
 
   .head-container p {
     background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
@@ -309,24 +300,24 @@ margin-right: -22rem;
 
   }
 
-  #product-container, #service-container{
+  .accordion, #allServices-container{
     margin: .2rem 2rem;
   }
 
 
 
-  .products-container h2, .contact-container h3, .service-container h2{
+  .allProducts-container h2, .contact-container h3, .allServices-container h2{
     font-size: 2.2rem;
     padding: 0rem 3rem;
 
   }
-  .products-container p, .service-container p{
+  .allProducts-container p, .allServices-container p{
     font-size: 1.2rem;
     padding: 0rem 4rem;
 
   }
 
-  #product-title, #service-title{
+  .accordion h5{
     font-size: 1.5rem;
     padding: 0rem 2rem;
 
@@ -340,9 +331,15 @@ margin-right: -22rem;
     transform: scale(2);
  }
 
+ /*double column grid*/
+ .accordions-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-.accordion-content div{
-  height: 15rem;
+}
+ .accordion {
+  width: 90%; /* Add this property or adjust as needed */
+  /* Additional styles for larger screens */
 }
 
 

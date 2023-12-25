@@ -7,10 +7,10 @@ const ProductAccordion = ({ products }) => {
   };
 
   return (
-    <div>
+    <div className='accordions-container'>
       {products.map((product, index) => (
-        <div key={index} id='product-container' className={`accordion-item ${index === activeIndex ? 'active' : ''}`}>
-          <h5 id='product-title' className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
+        <div key={index} className={`accordion ${index === activeIndex ? 'active' : ''}`}>
+          <h5 className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
             {product.title}
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
@@ -45,15 +45,17 @@ const Products = () => {
   ];
 
   return (
-    <section className='products-container'>
+    <section className='allProducts-container'>
       <h2><i className="bi bi-cookie"></i> Tratamientos</h2>
       <p>
         La medicina regenerativa ofrece tratamientos avanzados que <strong>aprovechan las propias capacidades
         curativas del cuerpo para acelerar la regeneración de tejidos</strong>, reducir el tiempo de
         recuperación y mejorar la calidad de vida de los pacientes.
       </p>
+      <div className="productItemsContainer">     
+         <ProductAccordion products={productsData} />
+      </div>
 
-      <ProductAccordion products={productsData} />
     </section>
   );
 };

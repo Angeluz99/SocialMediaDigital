@@ -7,10 +7,10 @@ const ServiceAccordion = ({ services }) => {
   };
 
   return (
-    <div>
+    <div className='accordions-container'>
       {services.map((service, index) => (
-        <div key={index} id='service-container' className={`accordion-item ${index === activeIndex ? 'active' : ''}`}>
-          <h5 id='service-title' className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
+        <div key={index} className={`accordion ${index === activeIndex ? 'active' : ''}`}>
+          <h5 className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
             {service.title}
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
@@ -33,7 +33,7 @@ const Services = () => {
     { title: 'Sueroterapia', presentaciones: "14 de noviembre. 20:00 hrs", lugar:"Via Zoom", description: 'Conoce la fórmula más innovadora que cambiará la vida tus pacientes', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service1.jpg' },
   ];
 return (
-  <section className='service-container'>
+  <section className='allServices-container'>
     <h2><i className="bi bi-clipboard2-heart"></i> Capacítate</h2>
     <p>
     ¿Eres profesional de la salud? ¿Te interesa ofrecer alternativas a tus pacientes?

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
+    <div className='contact-container text-center'>
       {/* Add content for the bottom section */}
       <footer>
         <h3><i className="bi bi-send-arrow-up"></i>  ¡Contáctanos para asesorías y pedidos!</h3>
@@ -14,7 +14,7 @@ const Contact = () => {
           </a> <br />     
            <a href="https://www.instagram.com/regeneratecelulasmadre/" target="_blank" rel="noopener noreferrer"> 
             <i className="bi bi-instagram"> Instagram.</i></a><br />
-            También puedes contactar via <a href="mailto:regeneratecelulasmadre@gmail.com">regeneratecelulasmadre@gmail.com.</a><br />
+            También puedes contactar via <a href="mailto:regeneratecelulasmadre@gmail.com">regeneratecelulasmadre@.</a><br />
              O llamar al <a href="tel:3345165088">33 4516 5088</a> en horario de oficina.</h6>
       </div>
       </footer>
