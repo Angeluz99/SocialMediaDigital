@@ -11,7 +11,7 @@ const ServiceAccordion = ({ services }) => {
       {services.map((service, index) => (
         <div key={index} className={`accordion ${index === activeIndex ? 'active' : ''}`}>
           <h5 className='d-flex justify-content-between' onClick={() => toggleAccordion(index)}>
-            {service.title}
+          <p><i className={`fa-solid ${service.icon}`}></i> {service.title}</p> 
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
           <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
@@ -30,7 +30,7 @@ const ServiceAccordion = ({ services }) => {
 
 const Services = () => {
   const servicesData = [
-    { title: 'Sueroterapia', presentaciones: "14 de noviembre. 20:00 hrs", lugar:"Via Zoom", description: 'Conoce la fórmula más innovadora que cambiará la vida tus pacientes', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service1.jpg' },
+    { icon:'fa-person-dots-from-line', title: 'Sueroterapia', presentaciones: "14 de noviembre. 20:00 hrs", lugar:"Via Zoom", description: 'Conoce la fórmula más innovadora que cambiará la vida tus pacientes', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service1.jpg' },
   ];
 return (
   <section className='allServices-container'>

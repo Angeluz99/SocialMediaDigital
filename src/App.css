@@ -56,6 +56,7 @@ body{
   background-color: rgba(240, 248, 255, 0.138);
   margin-top: -1rem;
   font-size: 1rem;
+  z-index: 1000;
 }
 
 .social-head a{
@@ -89,14 +90,23 @@ a{
   animation: cascadeDown 0.5s ease-in;
   color: #dcbee7;
   width: auto; /* Remove width property */
+  border: 1px solid #8842a1;
 
 
+}
+
+.presentaciones-tooltip {
+  display: none;
 }
 
 .accordion h5{
   filter: drop-shadow(5px 5px 7px #080009);
 
 }
+
+/* .accordion h5 p{ /*tittle of product*/
+/* margin-left: -4rem; */
+
 
 .accordion-content{
   color: antiquewhite;
@@ -218,7 +228,7 @@ a{
   #head-image2{
     display: block; 
     margin-bottom: 1rem;
-    z-index: 100;
+    z-index: 10;
     /* filter: blur(2px) */
   } 
 
@@ -252,7 +262,7 @@ a{
 
   .social-head a:hover{
     transform: scale(1.2);
-    color: #390842;
+    color: #d8c5db;
     filter: drop-shadow(5px 5px 7px #e7baef);
 
 
@@ -278,8 +288,10 @@ a{
   #head-image{
     display: block; 
     opacity:.9 ;  
-    margin-bottom: 1rem;
-    margin-right: -22rem;
+    margin-bottom: -.5rem;
+    margin-right: -25rem;
+    transform: rotate(5deg);
+    z-index: 1;
 
     /* filter: blur(2px) */
   } 
@@ -290,13 +302,19 @@ a{
   }
 
 
+
   .head-container p {
     background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
     padding: 0rem 2rem;
   } 
 
   .social-head{
+    position: relative; /*needed for z*/
     background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
+    z-index: 100;
+    /* position: absolute; */
+
+
 
   }
 
@@ -339,8 +357,27 @@ a{
 }
  .accordion {
   width: 90%; /* Add this property or adjust as needed */
-  /* Additional styles for larger screens */
+  padding: .5rem .2rem;
 }
 
+/*tittle of product*/
+.accordion h5 p{ 
+  margin-left: -4rem;
+  }
+
+
+  .presentaciones-tooltip {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    font-size: .7rem;
+    transform: translate(10px, -50%);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: #fff;
+    padding: 5px;
+    /* white-space: nowrap; */
+    z-index: 1;
+  }
 
 }
