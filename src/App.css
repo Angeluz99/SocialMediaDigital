@@ -104,9 +104,6 @@ a{
 
 }
 
-/* .accordion h5 p{ /*tittle of product*/
-/* margin-left: -4rem; */
-
 
 .accordion-content{
   color: antiquewhite;
@@ -123,6 +120,12 @@ a{
   border-radius: 15%;
 }
 
+
+
+.productPresentaciones{
+  display: flex;
+  justify-content:flex-end;
+}
 @keyframes cascadeDown {
   from {
     opacity: 0;
@@ -365,6 +368,11 @@ a{
   margin-left: -4rem;
   }
 
+  .accordion-content div {
+    border-radius: 3rem;
+    height: 10rem;
+  }
+
 
   .presentaciones-tooltip {
     display: block;
@@ -379,5 +387,11 @@ a{
     /* white-space: nowrap; */
     z-index: 1;
   }
+
+  .productPresentaciones{
+    display: none;
+
+  }
+  
 
 }

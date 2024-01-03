@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 const ProductAccordion = ({ products }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(null);
+  const [isImageTapped, setIsImageTapped] = useState(false);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -13,6 +14,11 @@ const ProductAccordion = ({ products }) => {
 
   const handleLeave = () => {
     setIsHovered(null);
+  };
+
+  const handleImageTap = () => {
+    // Toggle the state for image tap
+    setIsImageTapped(!isImageTapped);
   };
 
   return (
@@ -38,14 +44,22 @@ const ProductAccordion = ({ products }) => {
             )}
             <i className={`bi ${index === activeIndex ? 'bi-chevron-compact-up' : 'bi-chevron-compact-down'}`}></i>
           </h5>
-          <div className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}>
+          <div
+            className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}
+            onClick={() => handleImageTap()}
+          >
             <p>
               <strong> <i className="bi bi-body-text"></i></strong> {product.description}
             </p>
             <div>
-              <img src={process.env.PUBLIC_URL + product.imageUrl} alt={product.title} loading="lazy" />
+              <img
+                src={process.env.PUBLIC_URL + product.imageUrl}
+                alt={product.title}
+                loading="lazy"
+                style={{ transform: isImageTapped ? 'scale(2)' : 'scale(1)' }}
+              />
             </div>
-            <p className='d-flex justify-content-end mt-1' >
+            <p className='productPresentaciones' >
               <strong> <i className="bi bi-prescription2"></i> {product.presentaciones}</strong>
             </p>
           </div>
@@ -54,12 +68,6 @@ const ProductAccordion = ({ products }) => {
     </div>
   );
 };
-
-
-
-
-
-
 
 const Products = () => {
   // Sample data for 14 products
