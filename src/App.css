@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300;400&display=swap');
 
+/* :root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+} */
 
 body{
-  background-image: url('../public/images/background.jpg'); /* relative path*/
+  background-color: rgb(255, 255, 255);
+
+  /* background-image: url('../public/images/background.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  
+   */
 }
 
 
 .head-container {
-  background-color: #120115;
-  background-image: url('../public/images/logo.jpg');  /* Adjust the path accordingly */
-  background-size: cover;
-  /* background-repeat: repeat; */
-  background-position: 5rem -2rem;
+  /* background-color: #120115; */
+  background-image: url('../public/images/whitelogo.jpg');  /* Adjust the path accordingly */
+  background-size: 12.8rem 12rem;
+  background-repeat: no-repeat;
+  background-position: 11.5rem -1.2rem;
 
 }
 .head-container p {
-  font-size: .8rem;
-  width: 12rem;
-  color: #dcbee7;
+  font-size: .9rem;
+  width: 12.5rem;
+  color: #171417;
   font-family: Nunito;
-  background-color: rgba(240, 248, 255, 0.138);
+  background: linear-gradient(267deg, rgba(255,255,255,1) 0%, rgba(239,230,240,1) 53%);
   margin-top: 2.2rem;
   padding: 0rem .5rem;
   }  
@@ -31,11 +37,14 @@ body{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  background-color: #6c376be8;
+  /* background-color: rgb(204, 220, 241); */
+
+  background-color: #f4d5f3e8;
 }
 .navbar button{
-  background-color: #3c2044;
-  color: antiquewhite;
+  /* background-color: #3c2044; */
+
+  color: #120115;
   /* margin: .1rem; */
   font-size: .8rem;
   border: none;
@@ -53,15 +62,18 @@ body{
   display: none;
 }
 .social-head{
-  background-color: rgba(240, 248, 255, 0.138);
+  /* background-color: rgba(240, 248, 255, 0.138); */
+  background-color: #f4d5f3e8;
+
   margin-top: -1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   z-index: 1000;
 }
 
 .social-head a{
   margin: 0 1.5rem;
   transition: all .3s ease-out;
+  color: #58415b;
 }
 
 a{
@@ -70,27 +82,46 @@ a{
 
 }
 
+@keyframes lightWhats {
+  0% {
+    /* filter: saturate(.8); */
+    transform: scale(.8);   
+  }
+
+  100% {
+    color: rgb(32,212,101);
+    transform: scale(1.2); 
+  }
+}
+
+.whatsAppHead{
+  animation: lightWhats 1.5s ;
+  animation-iteration-count: infinite;
+
+
+}
+
 .allProducts-container, .allServices-container, .contact-container{
-  background-color: #6c376bce;
+  background-color: #ddd5f8ce;
   padding: .5rem;
   font-family: Nunito;
-  color: antiquewhite;
+  color: #080009;
 }
 
 .allServices-container{
-  padding: 1rem 0rem;
+  padding: 3rem .5rem;
 
 
 }
 .accordion{
-  background: linear-gradient(319deg, rgba(100,60,132,0.35) 0%, rgba(60,32,68,.5) 30%), rgb(116,21,76, .3)80%;
+  background: linear-gradient(319deg, rgba(100,60,132,0.15) 10%, rgba(60,32,68,.5) 30%), rgb(116,21,76, .3)80%;
   padding: .5rem;
   margin: .2rem 0rem;
   border-radius: 5px;
   animation: cascadeDown 0.5s ease-in;
-  color: #dcbee7;
+  color: #ffffff;
   width: auto; /* Remove width property */
-  border: 1px solid #8842a1;
+  border: 1px solid #eeeaf0;
 
 
 }
@@ -120,7 +151,11 @@ a{
   border-radius: 15%;
 }
 
+.scaleImage{
+  transform: scale(1.5);
 
+
+}
 
 .productPresentaciones{
   display: flex;
@@ -147,13 +182,19 @@ a{
 }
 
 
+.contact-info a{
+  font-weight: bolder;
+  text-decoration: none;
+  color: #221127;   
+ }
+
 
 
 /* for big cellphones */
 @media only screen and (min-width: 400px) {
   .head-container {
 
-    background-position: 5rem -2.5rem;
+    background-position: 12rem -1rem;
   
   }
 
@@ -208,9 +249,15 @@ a{
       margin: 0 3.5rem;
     }
 
-    #contact-info h6{
+
+    /* .contact-info{
+      background-color: #a83717;
+    } */
+    .contact-info h6{
       font-size: 1.7rem;
     }
+
+
 
     .accordion-content div{
       width: 100%;
@@ -253,8 +300,31 @@ a{
     cursor: pointer;
   }
 
+  .presentaciones-tooltip {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    font-size: .7rem;
+    transform: translate(10px, -50%);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: #fff;
+    padding: 5px;
+    /* white-space: nowrap; */
+    z-index: 1;
+  }
+
+  .productPresentaciones{
+    display: none;
+
+  }
+
+  .accordion{
+    margin: .2rem 2rem;
+  }
+
   /*hover animations*/
-  .navbar button:hover , #smlogo:hover, #contact-info a:hover{
+  .navbar button:hover , #smlogo:hover, .contact-info a:hover{
     transform: scale(1.1);
     filter: saturate(1.5);
     filter: drop-shadow(5px 5px 7px #120115);
@@ -263,13 +333,21 @@ a{
     transform: rotate(118deg);
   }
 
+
+
+  .whatsAppfoot{
+    font-size: larger;
+    
+  } 
+
   .social-head a:hover{
     transform: scale(1.2);
-    color: #d8c5db;
-    filter: drop-shadow(5px 5px 7px #e7baef);
-
+    color: #e0ade7;
+    filter: drop-shadow(5px 5px 5px #0d050f);
 
   }
+
+
 
   .accordion h5:hover, .accordion:hover,  #allServices-container:hover{
     transform: scale(1.02);
@@ -288,6 +366,9 @@ a{
  /* for computers */
 @media only screen and (min-width: 1200px) {
 
+  body{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(247,202,252,1) 73%); 
+  }
   #head-image{
     display: block; 
     opacity:.9 ;  
@@ -300,30 +381,31 @@ a{
   } 
 
   .head-container{
-    background-position: 11rem 0rem;
+    background-image: url('../public/images/whitelogo.jpg');  /* Adjust the path accordingly */
+
+    background-position: 20rem .5rem;
+    background-size: 22rem;
 
   }
 
 
 
   .head-container p {
-    background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
-    padding: 0rem 2rem;
+  /* background-color: white;     */
+  padding: 0rem 2rem;
   } 
 
   .social-head{
     position: relative; /*needed for z*/
-    background: linear-gradient(319deg, rgba(96,42,92,1) 0%, rgba(115,47,96,1) 50%, rgba(96,42,92,1) 95%);
+    background-color: #f4d5f3e8;
     z-index: 100;
     /* position: absolute; */
 
-
-
   }
 
-  .accordion, #allServices-container{
-    margin: .2rem 2rem;
-  }
+  .social-head a{
+    font-size: 2rem;
+  } 
 
 
 
@@ -374,24 +456,7 @@ a{
   }
 
 
-  .presentaciones-tooltip {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    font-size: .7rem;
-    transform: translate(10px, -50%);
-    /* background-color: rgba(0, 0, 0, 0.8); */
-    color: #fff;
-    padding: 5px;
-    /* white-space: nowrap; */
-    z-index: 1;
-  }
 
-  .productPresentaciones{
-    display: none;
-
-  }
   
 
 }

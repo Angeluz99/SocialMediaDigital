@@ -56,7 +56,7 @@ const App = () => {
 
         <div className='social-head d-flex justify-content-end'>
         {/* <div className='social-head-child d-flex justify-content-around border border-success' > */}
-        <a href="https://wa.me/523345165088/?text=Quisiera%20saber%20más%20de%20sus%20productos`" target="_blank" rel="noopener noreferrer">
+        <a className="whatsAppHead" href="https://wa.me/523345165088/?text=Quisiera%20saber%20más%20de%20sus%20productos`" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-whatsapp"></i>
         </a>
           <a href="https://www.facebook.com/profile.php?id=61551370328412" target="_blank" rel="noopener noreferrer">

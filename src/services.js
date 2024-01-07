@@ -36,7 +36,7 @@ return (
   <section className='allServices-container'>
     <h2><i className="bi bi-clipboard2-heart"></i> Capacítate</h2>
     <p>
-    ¿Eres profesional de la salud? ¿Te interesa ofrecer alternativas a tus pacientes?
+    ¿Eres profesional de la salud? <strong>¿Te interesa ofrecer alternativas a tus pacientes?</strong>
     ¿Quieres mejorar calidad de vida con tratamientos efectivos y confiables?
     ¡Entonces este curso es para ti!
     </p>
