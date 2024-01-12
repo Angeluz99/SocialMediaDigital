@@ -27,7 +27,7 @@ body{
 .head-container p {
   font-size: .9rem;
   width: 12.5rem;
-  color: #171417;
+  color: #2d032d;
   font-family: Nunito;
   background: linear-gradient(267deg, rgba(255,255,255,1) 0%, rgba(239,230,240,1) 53%);
   margin-top: 2.2rem;
@@ -42,9 +42,9 @@ body{
   background-color: #f4d5f3e8;
 }
 .navbar button{
-  /* background-color: #3c2044; */
+  background: linear-gradient(319deg, rgba(100,60,132,0.1) 10%, rgba(60,32,68,.1) 30%), rgb(116,21,76, .3)80%;
 
-  color: #120115;
+  color: #ffffffe8;
   /* margin: .1rem; */
   font-size: .8rem;
   border: none;
@@ -53,9 +53,19 @@ body{
   filter: drop-shadow(3px 3px 5px #120115);
 
 }
+
+
+@keyframes rotate {
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
 #smlogo{
   width: 2rem;
   filter: drop-shadow(3px 3px 5px #120115);
+  animation: rotate auto linear;
+  animation-timeline: scroll();
 }
 
 #head-image, #head-image2{
@@ -68,6 +78,8 @@ body{
   margin-top: -1rem;
   font-size: 1.3rem;
   z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 
 .social-head a{
@@ -81,6 +93,8 @@ a{
   color: #ecddf1;
 
 }
+
+
 
 @keyframes lightWhats {
   0% {
@@ -101,11 +115,42 @@ a{
 
 }
 
+@keyframes slideToRight {
+  to{
+    transform: translateX(30vw);
+
+  }
+
+  
+}
+
+.whatsAppfloat{
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  font-size: 6vw;
+  color: rgb(97, 165, 97);
+  display: none;
+  animation: 
+  lightWhats 1.5s ease-out infinite,
+  slideToRight .5s ease-in-out forwards;
+  padding: .9vw;
+  background-color: #f4d5f3e8;
+
+  z-index: 1000;
+  border-radius: 10%;
+  
+} 
+/* .whatsAppfloat::after{
+  content: "Contáctanos";
+  width:1rem;
+} */
+
 .allProducts-container, .allServices-container, .contact-container{
   background-color: #ddd5f8ce;
   padding: .5rem;
   font-family: Nunito;
-  color: #080009;
+  color: #2d032d;
 }
 
 .allServices-container{
@@ -137,7 +182,7 @@ a{
 
 
 .accordion-content{
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
 } 
 .accordion-content div{
   height: 8rem ;
@@ -185,9 +230,22 @@ a{
 .contact-info a{
   font-weight: bolder;
   text-decoration: none;
-  color: #221127;   
+  color: #230a25;   
  }
 
+ .whatsAppfoot{
+  font-size: larger;
+  text-decoration: none;
+
+  border-radius: 5%;
+  background-color:  rgb(32,212,101);
+  padding: .5vw;
+  
+} 
+
+.whatsAppfoot:hover{
+  color: whitesmoke;
+}
 
 
 /* for big cellphones */
@@ -335,10 +393,7 @@ a{
 
 
 
-  .whatsAppfoot{
-    font-size: larger;
-    
-  } 
+
 
   .social-head a:hover{
     transform: scale(1.2);
@@ -395,17 +450,25 @@ a{
   padding: 0rem 2rem;
   } 
 
-  .social-head{
-    position: relative; /*needed for z*/
-    background-color: #f4d5f3e8;
-    z-index: 100;
-    /* position: absolute; */
 
-  }
 
   .social-head a{
     font-size: 2rem;
   } 
+
+  @keyframes slideRightSecond {
+    to{
+      transform: translateX(11.3rem);
+    }
+    
+  }
+
+  .whatsAppfloat{
+    left: 70%;
+    font-size: 3rem;
+    animation: hi duration timing-function delay iteration-count direction fill-mode;
+    animation: lightWhats 1.2s ease-in-out infinite, slideRightSecond .5s ease-in-out forwards;
+  }
 
 
 

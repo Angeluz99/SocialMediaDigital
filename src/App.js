@@ -1,5 +1,4 @@
-// App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Products from './products';
 import Services from './services';
 import Contact from './contact';
@@ -11,7 +10,6 @@ const App = () => {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        // Display all sections on the Home page
         return (
           <div>
             <Products />
@@ -35,6 +33,34 @@ const App = () => {
   const navigateTo = (page) => {
     setCurrentPage(page);
   };
+
+  useEffect(() => {
+    // Calculate the 25% scroll position
+    const scrollPosition = window.innerHeight * 0.28;
+
+    // Get the element to change
+    const whatsAppfloat = document.querySelector('.whatsAppfloat');
+
+    // Function to check and update the style based on scroll position
+    const checkScrollPosition = () => {
+      if (window.scrollY > scrollPosition) {
+        whatsAppfloat.style.display = 'block';
+      } else {
+        whatsAppfloat.style.display = 'none';
+      }
+    };
+
+    // Attach the function to the scroll event
+    window.addEventListener('scroll', checkScrollPosition);
+
+    // Initial check on component mount
+    checkScrollPosition();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', checkScrollPosition);
+    };
+  }, []); 
 
   return (
     <div>
@@ -68,6 +94,9 @@ const App = () => {
           {/* </div>     */}
         </div>
     </div>
+    <a className="whatsAppfloat" href="https://wa.me/523345165088/?text=Quisiera%20saber%20más%20de%20sus%20productos`" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-whatsapp"></i>
+        </a>
 
     
     <div>{renderPage()}</div>
@@ -76,6 +105,8 @@ const App = () => {
       
     
   );
+
+  
 };
 
 export default App;
