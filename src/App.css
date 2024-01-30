@@ -382,14 +382,14 @@ a{
   }
 
   /*hover animations*/
-  .navbar button:hover , #smlogo:hover, .contact-info a:hover{
+  .navbar button:hover , .contact-info a:hover{
     transform: scale(1.1);
     filter: saturate(1.5);
     filter: drop-shadow(5px 5px 7px #120115);
   }
-  #smlogo:hover{
+  /* #smlogo:hover{
     transform: rotate(118deg);
-  }
+  } */
 
 
 
