@@ -25,7 +25,7 @@ body{
 
 }
 .head-container p {
-  font-size: .9rem;
+  font-size: .8rem;
   width: 12.5rem;
   color: #2d032d;
   font-family: Nunito;
@@ -353,7 +353,7 @@ a{
   
   }
 
-  .navbar button, #smlogo, .accordion h5 {
+  .navbar button, .accordion h5 {
     transition: all .3s ease-out;
     cursor: pointer;
   }
@@ -446,7 +446,7 @@ a{
 
 
   .head-container p {
-  /* background-color: white;     */
+  font-size: 1.4rem;  
   padding: 0rem 2rem;
   } 
 
@@ -494,7 +494,7 @@ a{
 
   }
   .accordion-content div img{
-    transform: scale(2);
+    transform: scale(1);
  }
 
  /*double column grid*/

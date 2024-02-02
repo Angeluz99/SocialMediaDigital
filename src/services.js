@@ -31,6 +31,9 @@ const ServiceAccordion = ({ services }) => {
 const Services = () => {
   const servicesData = [
     { icon:'fa-person-dots-from-line', title: 'Sueroterapia', presentaciones: "14 de noviembre. 20:00 hrs", lugar:"Via Zoom", description: 'Conoce la fórmula más innovadora que cambiará la vida tus pacientes', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service1.jpg' },
+    { icon:'fa-person-dots-from-line', title: 'Medicina Estética', presentaciones: "30 de enero. 20:00 hrs", lugar:"Via Zoom", description: 'Explorar nuestros productos de medicina estética. Respaldados por la última investigación científica, que proporcionan soluciones para realzar la belleza y mejorar la salud de la piel.', ponente: 'Andrés Castañeda Luna', imageUrl: '/images/service2.jpg' },
+    { icon:'fa-person-dots-from-line', title: 'Endocrinogenética', presentaciones: "7 de diciembre. 20:00 hrs", lugar:"Via Zoom", description: 'Endocrinogenética y hormonas bioidénticas', ponente: 'Dr. Alexis Monge', imageUrl: '/images/service3.jpg' },
+
   ];
 return (
   <section className='allServices-container'>
@@ -38,7 +41,7 @@ return (
     <p>
     ¿Eres profesional de la salud? <strong>¿Te interesa ofrecer alternativas a tus pacientes?</strong>
     ¿Quieres mejorar calidad de vida con tratamientos efectivos y confiables?
-    ¡Entonces este curso es para ti!
+    ¡Entonces estos cursos son para ti!
     </p>
 
     <ServiceAccordion services={servicesData} />

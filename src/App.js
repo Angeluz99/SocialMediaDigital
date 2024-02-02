@@ -74,7 +74,7 @@ const App = () => {
       
       <div id='head-content'>
         <p >
-        Somos un equipo de <strong>distribuidores especializados en medicina y terapia celular</strong>. Contamos con médicos certificados en el <strong>area regenerativa para apoyar en tus tratamientos.</strong>
+        Somos<strong> distribuidores de medicina regenerativa</strong> con un equipo altamente capacitado y más de 10 años de experiencia en terapia celular. Estamos aquí para brindarte el <strong> apoyo necesario en el tratamiento de tus pacientes.</strong>
         </p>
         <img id='head-image' src={process.env.PUBLIC_URL + '/images/headimage.png'} alt='pharmaceutical'  loading="lazy"/>
         <img id='head-image2' src={process.env.PUBLIC_URL + '/images/headimage2.png'} alt='pharmaceutical'  loading="lazy"/>
