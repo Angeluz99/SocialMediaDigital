@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/celulasregenerate/static/css/main.b9c58106.css",
-    "main.js": "/celulasregenerate/static/js/main.40ad612b.js",
+    "main.css": "/celulasregenerate/static/css/main.f34e6055.css",
+    "main.js": "/celulasregenerate/static/js/main.12b7d867.js",
     "static/js/787.72d37a86.chunk.js": "/celulasregenerate/static/js/787.72d37a86.chunk.js",
     "static/media/whitelogo.jpg": "/celulasregenerate/static/media/whitelogo.825400f3593ec209a231.jpg",
     "static/media/logotablet.jpg": "/celulasregenerate/static/media/logotablet.b0df167cd7a5b35cad51.jpg",
     "index.html": "/celulasregenerate/index.html",
-    "main.b9c58106.css.map": "/celulasregenerate/static/css/main.b9c58106.css.map",
-    "main.40ad612b.js.map": "/celulasregenerate/static/js/main.40ad612b.js.map",
+    "main.f34e6055.css.map": "/celulasregenerate/static/css/main.f34e6055.css.map",
+    "main.12b7d867.js.map": "/celulasregenerate/static/js/main.12b7d867.js.map",
     "787.72d37a86.chunk.js.map": "/celulasregenerate/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9c58106.css",
-    "static/js/main.40ad612b.js"
+    "static/css/main.f34e6055.css",
+    "static/js/main.12b7d867.js"
   ]
 }
