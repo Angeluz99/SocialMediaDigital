@@ -74,7 +74,7 @@ const App = () => {
       
       <div id='head-content'>
         <p >
-        Somos<strong> distribuidores de medicina regenerativa</strong> con un equipo altamente capacitado y más de 10 años de experiencia en terapia celular. Estamos aquí para brindarte el <strong> apoyo necesario en el tratamiento de tus pacientes.</strong>
+        Somos<strong> distribuidores de medicina regenerativa</strong> con un equipo altamente capacitado y <strong>más de 10 años de experiencia en terapia celular.</strong> Estamos aquí para brindarte el <strong> apoyo necesario en el tratamiento de tus pacientes.</strong>
         </p>
         <img id='head-image' src={process.env.PUBLIC_URL + '/images/headimage.png'} alt='pharmaceutical'  loading="lazy"/>
         <img id='head-image2' src={process.env.PUBLIC_URL + '/images/headimage2.png'} alt='pharmaceutical'  loading="lazy"/>
@@ -82,7 +82,7 @@ const App = () => {
 
         <div className='social-head d-flex justify-content-end'>
         {/* <div className='social-head-child d-flex justify-content-around border border-success' > */}
-        <a className="whatsAppHead" href="https://wa.me/523345165088/?text=Quisiera%20saber%20más%20de%20sus%20productos`" target="_blank" rel="noopener noreferrer">
+        <a className="whatsAppHead" href="https://wa.me/523345165088/?text=Quisiera%20saber%20más%20de%20sus%20productos" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-whatsapp"></i>
         </a>
           <a href="https://www.facebook.com/profile.php?id=61551370328412" target="_blank" rel="noopener noreferrer">
