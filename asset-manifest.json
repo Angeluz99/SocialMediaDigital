@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/celulasregenerate/static/css/main.238dd8a6.css",
-    "main.js": "/celulasregenerate/static/js/main.eab7a18a.js",
+    "main.css": "/celulasregenerate/static/css/main.e500cf63.css",
+    "main.js": "/celulasregenerate/static/js/main.636bd75c.js",
     "static/js/787.72d37a86.chunk.js": "/celulasregenerate/static/js/787.72d37a86.chunk.js",
     "static/media/Gloss_And_Bloom.ttf": "/celulasregenerate/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
     "static/media/bigBackgroundHead.png": "/celulasregenerate/static/media/bigBackgroundHead.ce0f00cec7fdcda81572.png",
@@ -10,13 +10,14 @@
     "static/media/Gotham-Thin.otf": "/celulasregenerate/static/media/Gotham-Thin.6447770f7eb4c8885d73.otf",
     "static/media/Gotham-Bold.otf": "/celulasregenerate/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
     "static/media/Gotham-Light.otf": "/celulasregenerate/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
+    "static/media/Gotham Condensed Medium.otf": "/celulasregenerate/static/media/Gotham Condensed Medium.d5c0a94182e632d70bbe.otf",
     "index.html": "/celulasregenerate/index.html",
-    "main.238dd8a6.css.map": "/celulasregenerate/static/css/main.238dd8a6.css.map",
-    "main.eab7a18a.js.map": "/celulasregenerate/static/js/main.eab7a18a.js.map",
+    "main.e500cf63.css.map": "/celulasregenerate/static/css/main.e500cf63.css.map",
+    "main.636bd75c.js.map": "/celulasregenerate/static/js/main.636bd75c.js.map",
     "787.72d37a86.chunk.js.map": "/celulasregenerate/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.238dd8a6.css",
-    "static/js/main.eab7a18a.js"
+    "static/css/main.e500cf63.css",
+    "static/js/main.636bd75c.js"
   ]
 }
