@@ -70,9 +70,9 @@ const ProductAccordion = ({ products }) => {
                 loading="lazy"
                 className={isImageTapped ? 'scaleImage' : '' }
               />
-              {isImageHovered && (
+              {/* {isImageHovered && (
                 <span className="img-message">*Imagen de referencia. <strong>Contáctanos para reibir nuestros catálogos.</strong></span>
-              )}
+              )} */}
             </div>
             <p className='productPresentaciones' >
               <strong> <i className="bi bi-prescription2"></i> {product.presentaciones}</strong>
@@ -104,9 +104,8 @@ const Products = () => {
     <section className='allProducts-container'>
       <h2><i class="bi bi-laptop"></i> Diseños e Impresiones</h2>
       <p>
-        La medicina regenerativa ofrece tratamientos avanzados que <strong>aprovechan las propias capacidades
-        curativas del cuerpo para acelerar la regeneración de tejidos</strong>, reducir el tiempo de
-        recuperación y mejorar la calidad de vida de los pacientes.
+      ¿Ya conoces nuestros servicios?
+En SM contamos con diseño e impresión de material publicitario.
       </p>
       <div className="productItemsContainer">     
          <ProductAccordion products={productsData} />
