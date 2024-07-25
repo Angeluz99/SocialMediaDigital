@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/medicina-regenerativa/static/css/main.9f00b1ab.css",
-    "main.js": "/medicina-regenerativa/static/js/main.07635c48.js",
-    "static/js/787.72d37a86.chunk.js": "/medicina-regenerativa/static/js/787.72d37a86.chunk.js",
-    "static/media/Gloss_And_Bloom.ttf": "/medicina-regenerativa/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
-    "static/media/bigBackgroundHead.png": "/medicina-regenerativa/static/media/bigBackgroundHead.ce0f00cec7fdcda81572.png",
-    "static/media/backgroundHead.png": "/medicina-regenerativa/static/media/backgroundHead.9f6b27666c16930a9647.png",
-    "static/media/Gotham-Black.otf": "/medicina-regenerativa/static/media/Gotham-Black.c9e42599a779a72eaadc.otf",
-    "static/media/Gotham-Thin.otf": "/medicina-regenerativa/static/media/Gotham-Thin.6447770f7eb4c8885d73.otf",
-    "static/media/Gotham-Bold.otf": "/medicina-regenerativa/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
-    "static/media/Gotham-Light.otf": "/medicina-regenerativa/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
-    "index.html": "/medicina-regenerativa/index.html",
-    "main.9f00b1ab.css.map": "/medicina-regenerativa/static/css/main.9f00b1ab.css.map",
-    "main.07635c48.js.map": "/medicina-regenerativa/static/js/main.07635c48.js.map",
-    "787.72d37a86.chunk.js.map": "/medicina-regenerativa/static/js/787.72d37a86.chunk.js.map"
+    "main.css": "/celulasregenerate/static/css/main.238dd8a6.css",
+    "main.js": "/celulasregenerate/static/js/main.eab7a18a.js",
+    "static/js/787.72d37a86.chunk.js": "/celulasregenerate/static/js/787.72d37a86.chunk.js",
+    "static/media/Gloss_And_Bloom.ttf": "/celulasregenerate/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
+    "static/media/bigBackgroundHead.png": "/celulasregenerate/static/media/bigBackgroundHead.ce0f00cec7fdcda81572.png",
+    "static/media/backgroundHead.png": "/celulasregenerate/static/media/backgroundHead.9f6b27666c16930a9647.png",
+    "static/media/Gotham-Black.otf": "/celulasregenerate/static/media/Gotham-Black.c9e42599a779a72eaadc.otf",
+    "static/media/Gotham-Thin.otf": "/celulasregenerate/static/media/Gotham-Thin.6447770f7eb4c8885d73.otf",
+    "static/media/Gotham-Bold.otf": "/celulasregenerate/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
+    "static/media/Gotham-Light.otf": "/celulasregenerate/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
+    "index.html": "/celulasregenerate/index.html",
+    "main.238dd8a6.css.map": "/celulasregenerate/static/css/main.238dd8a6.css.map",
+    "main.eab7a18a.js.map": "/celulasregenerate/static/js/main.eab7a18a.js.map",
+    "787.72d37a86.chunk.js.map": "/celulasregenerate/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f00b1ab.css",
-    "static/js/main.07635c48.js"
+    "static/css/main.238dd8a6.css",
+    "static/js/main.eab7a18a.js"
   ]
 }
