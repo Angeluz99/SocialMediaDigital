@@ -3,7 +3,7 @@
 
 body{
   background-color: rgb(255, 255, 255);
-
+  width:77% ;
 }
 
 
@@ -203,6 +203,12 @@ a{
 
 }
 
+.scaleImageServices{
+  transform: scale(2.5);
+
+
+}
+
 .productPresentaciones{
   display: flex;
   justify-content:flex-end;
@@ -334,7 +340,7 @@ a{
     }
 
     .accordion-content div img{
-       transform: scale(1.5);
+       transform: scale(1.1);
     }
 
     
