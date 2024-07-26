@@ -61,14 +61,15 @@ const ProductAccordion = ({ products }) => {
               <strong> <i className="bi bi-body-text"></i></strong> {product.description}
             </p>
             <div
-              onMouseEnter={handleImageHover}
-              onMouseLeave={handleImageLeave}
+            className="productsImg"
+              // onMouseEnter={handleImageHover}
+              // onMouseLeave={handleImageLeave}
             >
               <img
                 src={process.env.PUBLIC_URL + product.imageUrl}
                 alt={product.title}
                 loading="lazy"
-                className={isImageTapped ? 'scaleImage' : '' }
+                className= {isImageTapped ? 'scaleImage' : '' }
               />
               {/* {isImageHovered && (
                 <span className="img-message">*Imagen de referencia. <strong>Contáctanos para reibir nuestros catálogos.</strong></span>

@@ -12,11 +12,12 @@ const Contact = () => {
           O visita nuestras redes sociales para enterarte de las últimas promociones: <a href="https://www.facebook.com/profile.php?id=61551370328412" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-facebook"> Facebook,</i>
           </a> <br />     
-           <a href="https://www.instagram.com/regeneratecelulasmadre/" target="_blank" rel="noopener noreferrer"> 
-            <i className="bi bi-instagram"> Instagram.</i></a><br />
-            También puedes contactar via <a href="mailto:regeneratecelulasmadre@gmail.com">regeneratecelulasmadre@gmail.com</a><br />
-             O llamar al <a href="tel:3345165088">33 4516 5088</a> en horario de oficina.</h6>
+         
+          </h6>
       </div>
+      <section>
+        PAGINA CREADA POR mí
+      </section>
       </footer>
     </div>
   );
