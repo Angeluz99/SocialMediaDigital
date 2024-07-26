@@ -16,7 +16,7 @@ const Contact = () => {
           </h6>
       </div>
       <section>
-        PAGINA CREADA POR mí
+        PAGINA CREADA POR Angel Diaz.
       </section>
       </footer>
     </div>
