@@ -101,6 +101,12 @@ const Services = () => {
 
   return (
     <section className='allServices-container'>
+      <img
+        src={process.env.PUBLIC_URL + '/images/bannermid.jpg'}
+        alt="Interactuar"
+        loading="lazy"
+        className='bannermid'
+      />      
       <h2><i className="bi bi-people-fill"></i> Redes</h2>
       <p>
       Posiciona tu marca o negocio a través de redes sociales. Conoce los planes de manejo de redes que tenemos para ti.

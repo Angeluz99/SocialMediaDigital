@@ -10,7 +10,7 @@ const Contact = () => {
         <h6>Escríbenos via <a className='whatsAppfoot' href="https://wa.me/523141061520/?text=Quisiera%20saber%20más%20de%20sus%20productos..." target="_blank" rel="noopener noreferrer">
           <i className=" bi bi-whatsapp">WhatsApp.</i> </a> <br />
           O visita nuestras redes sociales para enterarte de las últimas promociones: <a href="https://www.facebook.com/profile.php?id=100071994851927" target="_blank" rel="noopener noreferrer">
-            <i className="bi bi-facebook"> Facebook,</i>
+            <i className="bi bi-facebook"> Facebook</i>
           </a> <br />     
          
           </h6>
