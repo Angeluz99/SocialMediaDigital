@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SocialMediaDigital/static/css/main.11ab5f29.css",
-    "main.js": "/SocialMediaDigital/static/js/main.fbb38fa6.js",
+    "main.css": "/SocialMediaDigital/static/css/main.8e83f093.css",
+    "main.js": "/SocialMediaDigital/static/js/main.1f2504f9.js",
     "static/js/787.72d37a86.chunk.js": "/SocialMediaDigital/static/js/787.72d37a86.chunk.js",
     "static/media/Gloss_And_Bloom.ttf": "/SocialMediaDigital/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
     "static/media/bigBackgroundHead.png": "/SocialMediaDigital/static/media/bigBackgroundHead.83d126ea5744bb3f33e9.png",
@@ -12,12 +12,12 @@
     "static/media/Gotham-Light.otf": "/SocialMediaDigital/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
     "static/media/Gotham Condensed Medium.otf": "/SocialMediaDigital/static/media/Gotham Condensed Medium.d5c0a94182e632d70bbe.otf",
     "index.html": "/SocialMediaDigital/index.html",
-    "main.11ab5f29.css.map": "/SocialMediaDigital/static/css/main.11ab5f29.css.map",
-    "main.fbb38fa6.js.map": "/SocialMediaDigital/static/js/main.fbb38fa6.js.map",
+    "main.8e83f093.css.map": "/SocialMediaDigital/static/css/main.8e83f093.css.map",
+    "main.1f2504f9.js.map": "/SocialMediaDigital/static/js/main.1f2504f9.js.map",
     "787.72d37a86.chunk.js.map": "/SocialMediaDigital/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11ab5f29.css",
-    "static/js/main.fbb38fa6.js"
+    "static/css/main.8e83f093.css",
+    "static/js/main.1f2504f9.js"
   ]
 }
