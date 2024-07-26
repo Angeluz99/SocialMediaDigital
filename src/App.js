@@ -87,9 +87,7 @@ const App = () => {
           <a href="https://www.facebook.com/profile.php?id=61551370328412" target="_blank" rel="noopener noreferrer">
             <i className="bi bi-facebook"></i>
           </a>        
-          <a href="https://www.instagram.com/regeneratecelulasmadre/" target="_blank" rel="noopener noreferrer">
-            <i className="bi bi-instagram"></i>
-          </a>    
+  
           {/* </div>     */}
         </div>
     </div>
