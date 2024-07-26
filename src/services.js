@@ -101,7 +101,7 @@ const Services = () => {
 
   return (
     <section className='allServices-container'>
-      <h2><i className="bi bi-clipboard2-heart"></i> Redes</h2>
+      <h2><i className="bi bi-people-fill"></i> Redes</h2>
       <p>
       Posiciona tu marca o negocio a través de redes sociales. Conoce los planes de manejo de redes que tenemos para ti.
       </p>

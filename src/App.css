@@ -195,6 +195,10 @@ a{
 .allProducts-container h2, .contact-container h3, .allServices-container h2{
   font-family: Gloss-and-Bloom;
 }
+
+.allProducts-container h2{
+  margin-top: 2vw;
+}
 .allServices-container{
   padding: 3rem .5rem;
 
