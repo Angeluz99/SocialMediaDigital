@@ -125,7 +125,7 @@ background-color: var(--green);
 .social-head a{
   margin: 0 1.5rem;
   transition: all .3s ease-out;
-  color: black;
+  color: white;
 }
 
 a{
@@ -301,6 +301,17 @@ a{
 .alert{
   max-height: 2rem;
   font-size: .8rem;
+  }
+
+  .contact-container{
+    padding-top: 4vw;
+  }
+
+  .contact-container div{
+border: solid .5vh var(--green);
+border-radius: 5%;
+margin: 1vw;
+
   }
 
 .contact-info a{
