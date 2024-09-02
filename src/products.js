@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 const ProductAccordion = ({ products }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(null);
-  const [isImageTapped, setIsImageTapped] = useState(false);
-  const [isImageHovered, setIsImageHovered] = useState(false);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -18,17 +16,7 @@ const ProductAccordion = ({ products }) => {
     setIsHovered(null);
   };
 
-  const handleImageHover = () => {
-    setIsImageHovered(true);
-  };
 
-  const handleImageLeave = () => {
-    setIsImageHovered(false);
-  };
-
-  const handleImageTap = () => {
-    setIsImageTapped(!isImageTapped);
-  };
 
   return (
     <div className='accordions-container'>
@@ -55,25 +43,20 @@ const ProductAccordion = ({ products }) => {
           </h5>
           <div
             className={`accordion-content cascade-item ${index === activeIndex ? 'active' : ''}`}
-            onClick={() => handleImageTap()}
+            // onClick={() => handleImageTap()}
           >
             <p>
               <strong> <i className="bi bi-body-text"></i></strong> {product.description}
             </p>
             <div
             className="productsImg"
-              // onMouseEnter={handleImageHover}
-              // onMouseLeave={handleImageLeave}
             >
               <img
                 src={process.env.PUBLIC_URL + product.imageUrl}
                 alt={product.title}
                 loading="lazy"
-                className= {isImageTapped ? 'scaleImage' : '' }
               />
-              {/* {isImageHovered && (
-                <span className="img-message">*Imagen de referencia. <strong>Contáctanos para reibir nuestros catálogos.</strong></span>
-              )} */}
+
             </div>
             <p className='productPresentaciones' >
               <strong> <i className="bi bi-prescription2"></i> {product.presentaciones}</strong>
@@ -103,7 +86,7 @@ const Products = () => {
 
   return (
     <section className='allProducts-container'>
-      <h2><i class="bi bi-laptop"></i> Diseños e Impresiones</h2>
+      <h2><i className="bi bi-laptop"></i> Diseños e Impresiones</h2>
       <p>
       ¿Ya conoces nuestros servicios?
 En SM contamos con diseño e impresión de material publicitario.
