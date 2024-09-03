@@ -1,0 +1,21 @@
+error: failed to push some refs to '
+PS C:\Users\angel\.vscode\New folder\ReactApps\celulasmadre> git branch -M main
+
+8 vulnerabilities (2 moderate, 6 high)
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+  for changes: git status
+  git add . 
+  git commit -m ""
+  git push
+
+  npm run deploy
+
+https://regeneratecelulas.github.io/medicina-regenerativa/
+
+
+
+
+api maps
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
