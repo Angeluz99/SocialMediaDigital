@@ -422,7 +422,6 @@ background-color: rgba(255, 255, 255, 0.101);
 }
 
 
-/* for big cellphones */
 @media only screen and (min-width: 400px) {
   .head-container {
 
@@ -432,7 +431,6 @@ background-color: rgba(255, 255, 255, 0.101);
 
 }
 
-/* for small ipads */
 
 @media only screen and (min-width: 700px) {
   .head-container {
