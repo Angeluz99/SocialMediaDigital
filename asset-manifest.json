@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SocialMediaDigital/static/css/main.abd9637d.css",
+    "main.css": "/SocialMediaDigital/static/css/main.883d4625.css",
     "main.js": "/SocialMediaDigital/static/js/main.c20cb942.js",
     "static/js/787.72d37a86.chunk.js": "/SocialMediaDigital/static/js/787.72d37a86.chunk.js",
     "static/media/contact.jpg": "/SocialMediaDigital/static/media/contact.9e1481259370bc8abeec.jpg",
@@ -13,12 +13,12 @@
     "static/media/Gotham-Light.otf": "/SocialMediaDigital/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
     "static/media/Gotham Condensed Medium.otf": "/SocialMediaDigital/static/media/Gotham Condensed Medium.d5c0a94182e632d70bbe.otf",
     "index.html": "/SocialMediaDigital/index.html",
-    "main.abd9637d.css.map": "/SocialMediaDigital/static/css/main.abd9637d.css.map",
+    "main.883d4625.css.map": "/SocialMediaDigital/static/css/main.883d4625.css.map",
     "main.c20cb942.js.map": "/SocialMediaDigital/static/js/main.c20cb942.js.map",
     "787.72d37a86.chunk.js.map": "/SocialMediaDigital/static/js/787.72d37a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd9637d.css",
+    "static/css/main.883d4625.css",
     "static/js/main.c20cb942.js"
   ]
 }
